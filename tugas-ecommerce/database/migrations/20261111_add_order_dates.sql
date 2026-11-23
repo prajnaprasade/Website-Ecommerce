@@ -1,0 +1,3 @@
+ALTER TABLE orders_info
+    ADD COLUMN ordered_at DATETIME NULL DEFAULT NULL AFTER order_id,
+    ADD COLUMN paid_at DATETIME NULL DEFAULT NULL AFTER ordered_at;
